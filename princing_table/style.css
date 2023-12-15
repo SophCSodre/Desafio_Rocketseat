@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    --white: #fff;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    height: 100%;
+    background: linear-gradient(to bottom, #1d539e 50%, #f9fbfc 50%);
+    background-repeat: no-repeat;
+}
+
+#container section {
+    display: flex;
+    flex-flow: column;
+}
+
+/* Titulo - Header */
+
+.title {
+    text-align: center;
+    margin-top: 60px;
+    color: var(--white);
+}
+
+.title h1 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.title p {
+    font-size: 15px;
+    color: var(--white);
+}
+
+/* Card */
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card section {
+    background-color: var(--page-background);
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card section:hover {
+    transform: scale(1.05);
+    transition: transform .5s ease;
+}
+
+/* Preço e modelo */
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 30px;
+    color: #1e2338;
+    font-weight: bold;
+}
+
+.price-unid {
+    font-size: 18px;
+}
+
+.mes {
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: normal;
+    margin-left: -3px;
+}
+
+.price-basic {
+    display: flex;
+    align-items: center;
+    gap: 143px;
+    width: 130%;
+    height: 60px;
+
+    background-color: var(--yellow);
+    padding: 25px 30px;
+    margin: -20px 0px 10px -30px;
+}
+
+.price-basic h4 {
+    padding-top: 10px;
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.price-basic span {
+    background-color: var(--blue);
+    color: var(--page-background);
+    padding: 8px 24px;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Lista e paragrafo */
+
+p, ul, li{
+    font-size: 14px;
+    color: var(--gray);
+}
+
+p {
+    padding: 5px 0px 10px 0px;
+}
+
+ul {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    flex: 1;
+    font-weight: 600;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botão */
+
+button {
+    padding: 5px 30%;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    background-color: var(--page-background);
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--blue);
+    color: var(--page-background);
+}
