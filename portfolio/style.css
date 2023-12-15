@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Merriweather+Sans:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #92CB93;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #22212C;
+    font-family:'Merriweather', sans-serif;
+    color: #837E9F;
+}
+
+a {
+    text-decoration: none;
+    color: #837E9F;
+}
+
+a:hover {
+    color: #92CB93;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    padding: 10px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 12pt;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+/* div de informações */
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 90%;
+}
+
+.info section {
+    border: 1px solid #302F3D;
+    background-color: #302F3D;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* perfil */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 125px;
+    border: 3px solid #42d16b;
+}
+
+/* rede sociais e contato */
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.social img {
+    margin-right: 10px;
+}
+
+/* tecnologias */
+.tech ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 12px;
+    gap: 1em;
+    font-size: 8pt;
+    margin: 10px;
+}
+
+.tech li {
+    background-color: #92CB93;
+    color: #22212C;
+    padding: 10px;
+    width: 75px;
+    text-align: center;
+    border-radius: 60px;
+    padding: 10px;
+}
+
+/* experiências */
+.experience dl, .school dl {
+    padding-left: 25px;
+}
+
+.experience dt, .school dt {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+/* posts e repositórios */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+    width: 90%;
+}
+
+.content div, li {
+    background-color: #302F3D;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content div {
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+
+.content div a {
+    padding: 30px;
+}
+
+/* projetos */
+.project {
+    width: 100%;
+}
+
+.project ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.project ul li {
+    width: 100%;
+}
+
+.project li a {
+    display: flex;
+    gap: 5px;
+    font-size: 15pt;
+}
+
+.project aside {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.project aside span {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.project aside strong {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* postagens */
+.post {
+    width: 100%;
+}
+
+.post ul li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-top: 20px;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.post .pic img {
+    border: 2px solid #42d16b;
+    width: 45px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.post img {
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.post figure {
+    text-align: center;
+}
+
+/* footer */
+footer {
+    color:#42d16b;
+    text-align: center;
+    margin: 30px;
+    font-style: italic;
+    font-size: 14pt;
+}
+
+@media(min-width:500px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #container{
+        width: 500px;
+    }
+}
+@media(min-width:900px){
+    
+    #container{
+        width: 95%;
+        flex-flow: row;
+        align-items: flex-start;
+    }
+
+    .info{
+        flex-basis: 50%;
+    }
+
+    .project ul{
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    
+    .project ul li{
+        width: 48%;
+    }
+}
